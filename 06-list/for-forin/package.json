@@ -1,15 +1,11 @@
 {
-  "name": "02-nodejs",
+  "name": "for-forin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "service.js",
   "scripts": {
-    "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.27.2"
-  }
+  "license": "ISC"
 }
