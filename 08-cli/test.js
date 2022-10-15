@@ -9,4 +9,12 @@ describe('Hero manipulation suite', () => {
         const [result] = await Database.list(expected.id)
         deepEqual(result, expected)
     })
+
+    it('Search a hero using files', async () => {
+        const expected = DEFAULT_ITEM_REGISTER 
+        const result = await Database.store(DEFAULT_ITEM_REGISTER)
+        const [actual] = await Database.list(DEFAULT_ITEM_REGISTER.id)
+        deepEqual(actual, expected)
+    })
+
 })

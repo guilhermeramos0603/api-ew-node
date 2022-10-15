@@ -1,7 +1,17 @@
 [
     {
-        "name":"Flash", 
-        "power": "Speed", 
+        "name": "Flash",
+        "power": "Speed",
         "id": 1
+    },
+    {
+        "id": 1,
+        "name": "Flash",
+        "power": "Speed"
+    },
+    {
+        "id": 1,
+        "name": "Flash",
+        "power": "Speed"
     }
 ]
