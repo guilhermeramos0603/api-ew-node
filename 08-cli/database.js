@@ -56,12 +56,14 @@ class Database {
 
     async delete(id) {
         if (!id) {
-            return await this.writeHere([])
+            console.error('Hero not found with id informed')
+            return
         }
         const data = await this.getDataFile()
-        const index = data.findIndex(item => item.id === parseInt(id))
+        const index = data.findIndex(item => item.id === id)
         if (index === -1) {
             throw Error('Hero not found with id informed')
+            return false
         }
         data.splice(index, 1)
         return await this.writeHere(data)
