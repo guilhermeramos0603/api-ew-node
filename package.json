@@ -12,7 +12,10 @@
   "dependencies": {
     "axios": "^0.27.2",
     "commander": "^9.4.1",
-    "nock": "^13.2.9"
+    "nock": "^13.2.9",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.26.0"
   },
   "devDependencies": {
     "mocha": "^10.0.0"
