@@ -6,7 +6,7 @@ const writeFileAsync = promisify(writeFile)
 
 class Database {
     constructor() {
-        this.NAME_FILE = 'heros.json'
+        this.NAME_FILE = 'heroes.json'
     }
     async getDataFile() {
         const file = await readFileAsync(this.NAME_FILE, 'utf8')
