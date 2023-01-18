@@ -1,14 +1,7 @@
 const assert = require('assert')
-const MongoDb = require('./../src/db/strategies/mongodb/mongoDbStrategy')
-const HeroSchema = require('./../src/db/strategies/mongodb/schemas/heroSchema')
-const Context = require('./../src/db/strategies/base/contextStrategy')
-
-// 1o alterar criar pasta mongodb
-// 2o mover mongodbStrategy para mongodb
-// 3o modificar classe do mongodbStrategy
-// 4o modificar criar schema em mongodb/schemas
-// 6o modificar teste fazendo conexão direto do MongoDB
-// 5o modificar teste passando para o MongoDB
+const MongoDb = require('../db/strategies/mongodb/mongoDbStrategy')
+const HeroSchema = require('../db/strategies/mongodb/schemas/heroSchema')
+const Context = require('../db/strategies/base/contextStrategy')
 
 const MOCK_HERO_CADASTRAR = {
     nome: 'Gaviao Negro',
